@@ -493,10 +493,10 @@ public abstract class StateMachineBase extends UIBuilder {
     }
 
     protected boolean setListModel(List cmp) {
-        String listName = cmp.getName();
-        if("CampaignsList".equals(listName)) {
-            return initListModelCampaignsList(cmp);
-        }
+//        String listName = cmp.getName();
+//        if("CampaignsList".equals(listName)) {
+//            return initListModelCampaignsList(cmp);
+//        }
         return super.setListModel(cmp);
     }
 

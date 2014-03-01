@@ -37,17 +37,17 @@ public class StateMachine extends StateMachineBase {
      */
     protected void initVars(Resources res) {
 		System.out.println("resource: " + res);
-		callFireClient = new CallFireClient();
-		this.findCampaignsList().addPullToRefresh(new Runnable() {
-			@Override public void run() {
-				System.out.println("Twitter pull refresh");
-			}
-		});
+//		callFireClient = new CallFireClient();
+//		this.findCampaignsList().addPullToRefresh(new Runnable() {
+//			@Override public void run() {
+//				System.out.println("Twitter pull refresh");
+//			}
+//		});
     }
 
 
-    @Override
-    protected void onMain_MultiButton2Action(Component c, ActionEvent event) {
+//    @Override
+//    protected void onMain_MultiButton2Action(Component c, ActionEvent event) {
 //		Dialog.show("Testing 1, 3, 5", "Whooo", "OK", null);
 //		System.out.println("onMain pressed");
 //		TwitterConnectionRequest request = new TwitterConnectionRequest();
@@ -55,7 +55,7 @@ public class StateMachine extends StateMachineBase {
 //		Dialog progressDialog = progress.showInifiniteBlocking();
 //		request.setDisposeOnCompletion(progressDialog);
 //		NetworkManager.getInstance().addToQueueAndWait(request);
-    }
+//    }
 
     @Override
     protected void beforeMain(Form f) {
@@ -122,23 +122,23 @@ public class StateMachine extends StateMachineBase {
     
     }
 
-    @Override
-    protected void onCreateJobsApp() {
-    
-    }
-
-    @Override
-    protected void beforeJobsApp(Form f) {
-    
-    }
-
-    @Override
-    protected void exitJobsApp(Form f) {
-    
-    }
-
-    @Override
-    protected void postJobsApp(Form f) {
-    
-    }
+//    @Override
+//    protected void onCreateJobsApp() {
+//    
+//    }
+//
+//    @Override
+//    protected void beforeJobsApp(Form f) {
+//    
+//    }
+//
+//    @Override
+//    protected void exitJobsApp(Form f) {
+//    
+//    }
+//
+//    @Override
+//    protected void postJobsApp(Form f) {
+//    
+//    }
 }
