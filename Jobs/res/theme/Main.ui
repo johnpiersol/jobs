@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="Main" cloudDestinationProperty="JobsAppForm" scrollableY="false" layout="BorderLayout" borderLayoutAbsoluteCenter="false" title="Jobs" >
+  <component type="Tabs" name="JobsAppTabs" cloudDestinationProperty="JobsAppTabs" >
+    <layoutConstraint value="Center" />
+    <custom name="titles" type="java.lang.String" array="true" dimensions="1" >
+      <str>Campaigns</str>
+      <str>Numbers</str>
+      <str>Messages</str>
+      <str>Account</str>
+    </custom>
+    <component type="Container" name="CampaignsTab" tabTitle="Campaigns" cloudDestinationProperty="CampaignsTab" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <component type="Label" name="CampaignsTitle" cloudDestinationProperty="CampaignsTitle" text="Campaigns" verticalAlignment="4" >
+        <layoutConstraint value="North" />
+      </component>
+      <component type="Table" name="CampaignsTable" cloudDestinationProperty="CampaignsTable" snapToGrid="false" >
+        <layoutConstraint value="South" />
+        <custom name="data" type="java.lang.String" array="true" dimensions="2" >
+          <arr>            <str>Voice Broadcast, Feb 14, 10:42</str>
+            <str>Running</str>
+            <str>62%</str>
+          </arr>
+          <arr>            <str>Text Broadcast, Feb 14, 9:56</str>
+            <str>Scheduled</str>
+            <str>0%</str>
+          </arr>
+          <arr>            <str>IVR Broadcast, Feb 14, 8:30</str>
+            <str>Finished</str>
+            <str>100%</str>
+          </arr>
+        </custom>
+        <custom name="header" type="java.lang.String" array="true" dimensions="1" >
+          <str>Name</str>
+          <str>Status</str>
+          <str>Progress</str>
+        </custom>
+      </component>
+      <component type="MultiList" name="CampaignsList" cloudDestinationProperty="MultiList" scrollVisible="true" orientation="0" >
+        <layoutConstraint value="Center" />
+        <mapItems>
+          <stringItem key="Status" value="RUNNING" />
+          <stringItem key="Name" value="Text Broadcast, Feb 14, 9:56" />
+          <stringItem key="Progress" value="60%" />
+        </mapItems>
+        <mapItems>
+          <stringItem key="Line2" value="more..." />
+          <stringItem key="Line1" value="Entry 2" />
+        </mapItems>
+        <mapItems>
+          <stringItem key="Line2" value="more..." />
+          <stringItem key="Line1" value="Entry 3" />
+        </mapItems>
+        <custom name="name1" type="java.lang.String" value="Name" />
+        <custom name="name2" type="java.lang.String" value="Status" />
+        <custom name="name3" type="java.lang.String" value="Progress" />
+        <custom name="horizontalLayout" type="java.lang.Boolean" value="true" />
+      </component>
+    </component>
+    <component type="Container" name="NumbersTab" tabTitle="Numbers" cloudDestinationProperty="NumbersTab" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="ComponentGroup" name="ComponentGroup" cloudDestinationProperty="ComponentGroup" >
+        <component type="Label" name="Label" cloudDestinationProperty="Label" text="Information Can Fit Here" >
+        </component>
+        <component type="MultiButton" name="MultiButton" cloudDestinationProperty="MultiButton" >
+          <custom name="line1" type="java.lang.String" value="Multi Button With Details" />
+          <custom name="line2" type="java.lang.String" value="And Some more details" />
+        </component>
+        <component type="Button" name="Button" cloudDestinationProperty="Button" text="Button With Functionality" >
+        </component>
+      </component>
+    </component>
+    <component type="Container" name="MessagesTab" tabTitle="Messages" cloudDestinationProperty="MessagesTab" layout="BorderLayout" borderLayoutAbsoluteCenter="false" >
+      <component type="MapComponent" name="MapComponent" cloudDestinationProperty="MapComponent" >
+        <layoutConstraint value="Center" />
+      </component>
+    </component>
+    <component type="Container" name="AccountTab" tabTitle="Account" cloudDestinationProperty="AccountTab" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="Label" name="Label1" cloudDestinationProperty="Label1" uiid="Label" text="Setting One" >
+      </component>
+      <component type="ComponentGroup" name="ComponentGroup1" cloudDestinationProperty="ComponentGroup1" >
+        <component type="MultiButton" name="FirstButton" cloudDestinationProperty="MultiButton2" >
+          <custom name="line1" type="java.lang.String" value="One Option" />
+          <custom name="line2" type="java.lang.String" value="Click this if you choose" />
+          <custom name="radioButton" type="java.lang.Boolean" value="true" />
+          <custom name="group" type="java.lang.String" value="radio" />
+        </component>
+        <component type="MultiButton" name="MultiButton4" cloudDestinationProperty="MultiButton4" >
+          <custom name="line1" type="java.lang.String" value="Second Option" />
+          <custom name="line2" type="java.lang.String" value="You might prefer this" />
+          <custom name="radioButton" type="java.lang.Boolean" value="true" />
+          <custom name="group" type="java.lang.String" value="radio" />
+        </component>
+        <component type="MultiButton" name="MultiButton1" cloudDestinationProperty="MultiButton1" >
+          <custom name="line1" type="java.lang.String" value="Third Option" />
+          <custom name="line2" type="java.lang.String" value="This is your last choice..." />
+          <custom name="radioButton" type="java.lang.Boolean" value="true" />
+          <custom name="group" type="java.lang.String" value="radio" />
+        </component>
+      </component>
+      <component type="Label" name="Label11" cloudDestinationProperty="Label11" uiid="Label" text="Setting Two" >
+      </component>
+      <component type="ComponentGroup" name="ComponentGroup2" cloudDestinationProperty="ComponentGroup2" >
+        <component type="MultiButton" name="MultiButton3" cloudDestinationProperty="MultiButton3" >
+          <custom name="line1" type="java.lang.String" value="What do you think about this?" />
+          <custom name="line2" type="java.lang.String" value="Seriously?" />
+          <custom name="checkBox" type="java.lang.Boolean" value="true" />
+        </component>
+      </component>
+    </component>
+  </component>
+</component>

@@ -1,0 +1,85 @@
+{
+    "ResourceList": {
+        "@totalResults": 24,
+        "Broadcast": [
+            {
+                "@id": 914431001,
+                "Name": "Voice Broadcast, 6/12/13 9:20 AM",
+                "Status": "FINISHED",
+                "Type": "VOICE",
+                "VoiceBroadcastConfig": {
+                    "FromNumber": "12132212247",
+                    "LocalTimeZoneRestriction": {
+                        "BeginTime": "08:00:00Z",
+                        "EndTime": "21:00:00Z"
+                    },
+                    "RetryConfig": {
+                        "MaxAttempts": 1,
+                        "MinutesBetweenAttempts": 60,
+                        "RetryResults": ""
+                    },
+                    "AnsweringMachineConfig": "AM_AND_LIVE",
+                    "LiveSoundId": 166618001,
+                    "MachineSoundId": 166620001,
+                    "TransferDigit": "1",
+                    "TransferNumber": "18185369826",
+                    "DncSoundId": 166622001,
+                    "DncDigit": "8",
+                    "MaxActiveTransfers": 1
+                }
+            },
+            {
+                "@id": 914503001,
+                "Name": "Voice Broadcast, 6/12/13 10:15 AM",
+                "Status": "FINISHED",
+                "Type": "VOICE",
+                "VoiceBroadcastConfig": {
+                    "FromNumber": "12132212247",
+                    "LocalTimeZoneRestriction": {
+                        "BeginTime": "08:00:00Z",
+                        "EndTime": "21:00:00Z"
+                    },
+                    "RetryConfig": {
+                        "MaxAttempts": 1,
+                        "MinutesBetweenAttempts": 60,
+                        "RetryResults": ""
+                    },
+                    "AnsweringMachineConfig": "AM_AND_LIVE",
+                    "LiveSoundId": 166618001,
+                    "MachineSoundId": 166620001,
+                    "TransferDigit": "1",
+                    "TransferNumber": "18185369826",
+                    "DncSoundId": 166622001,
+                    "DncDigit": "8",
+                    "MaxActiveTransfers": 1
+                }
+            },
+            {
+                "@id": 917169001,
+                "Name": "Sean's Super Slick Voice Broadcast (6/14/13 8:15 AM)",
+                "Status": "FINISHED",
+                "Type": "VOICE",
+                "VoiceBroadcastConfig": {
+                    "FromNumber": "19492296847",
+                    "LocalTimeZoneRestriction": {
+                        "BeginTime": "08:00:00Z",
+                        "EndTime": "21:00:00Z"
+                    },
+                    "RetryConfig": {
+                        "MaxAttempts": 1,
+                        "MinutesBetweenAttempts": 60,
+                        "RetryResults": ""
+                    },
+                    "AnsweringMachineConfig": "AM_AND_LIVE",
+                    "LiveSoundId": 167775001,
+                    "MachineSoundId": 167778001,
+                    "TransferDigit": "1",
+                    "TransferNumber": "12132212247",
+                    "DncSoundId": 167781001,
+                    "DncDigit": "8",
+                    "MaxActiveTransfers": 2
+                }
+            }
+        ]
+    }
+}
